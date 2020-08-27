@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
-<head><title>Database test page</title>
+<head><title>Date and Time Converter</title>
 <style>
 th { text-align: left; }
 
@@ -16,12 +16,12 @@ th, td {
 </head>
 
 <body>
-<h1>Database test page</h1>
+  <h1>Date and Time Converter</h1>
 
-<p>Showing contents of papers table:</p>
+<p>Showing list of avaliable conversions:</p>
 
-<table border="1">
-<tr><th>Paper code</th><th>Paper name</th></tr>
+<table border="3">
+  <tr><th>Country/City</th><th>Currency</th<th>Timezone</th<th>Offset from UTC</th></tr>
 
 <?php
  
