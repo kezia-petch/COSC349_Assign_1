@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     # labs, but recall that it means that our host computer can
     # connect to IP address 127.0.0.1 port 8080, and that network
     # request will reach our webserver VM's port 80.
-    webserver.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+    webserver.vm.network "forwarded_port", guest: 80, host: 8090, host_ip: "127.0.0.1"
     
     # We set up a private network that our VMs will use to communicate
     # with each other. Note that I have manually specified an IP
@@ -141,7 +141,7 @@ Vagrant.configure("2") do |config|
     # labs, but recall that it means that our host computer can
     # connect to IP address 127.0.0.1 port 8080, and that network
     # request will reach our webserver VM's port 80.
-    dayconverter.vm.network "forwarded_port", guest: 80, host: 8085, host_ip: "127.0.0.1"
+    dayconverter.vm.network "forwarded_port", guest: 80, host: 8091, host_ip: "127.0.0.1"
     
     # We set up a private network that our VMs will use to communicate
     # with each other. Note that I have manually specified an IP
