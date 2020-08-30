@@ -34,7 +34,7 @@ $pdo_dsn = "mysql:host=$db_host;dbname=$db_name";
 
 $pdo = new PDO($pdo_dsn, $db_user, $db_passwd);
 
-$q = $pdo->query("SELECT * FROM papers");
+$q = $pdo->query("SELECT * FROM dayconverter");
 
 while($row = $q->fetch()){
   echo "<tr><td>".$row["code"]."</td><td>".$row["name"]."</td></tr>\n";
