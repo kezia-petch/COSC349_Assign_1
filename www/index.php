@@ -45,36 +45,52 @@ while($row = $q->fetch()){
 
 <form action="checkbox-form.php" method="post">
 
-    <body>
-    <div class="container">
-    <div class="main">
-    <h2>Select what country/city you want the conversion to be for:</h2>
-    <form action="form.php" method="post">
-    <!----- Select Option Fields Starts Here ----->
-    <label class="heading">Country/City:</label>
-    <select multiple name="Country/City[]">
-    <option value="Red">Red</option>
-    <option value="Green">Green</option>
-    <option value="Blue">Blue</option>
-    <option value="Pink">Pink</option>
-    <option value="Yellow">Yellow</option>
-    <option value="White">White</option>
-    <option value="Black">Black</option>
-    <option value="Violet">Violet</option>
-    <option value="Limegreen">Limegreen</option>
-    <option value="Brown">Brown</option>
-    <option value="Orange">Orange</option>
-    </select>
-    <?php include'select_value.php'; ?>
-    <!---- Radio Button Starts Here ----->
-    <label class="heading">Converison Type:</label>
-    <input name="radio" type="radio" value="Currency Conversion">Currency Conversion
-    <input name="radio" type="radio" value="Timezone Conversion">Timezone Conversion
-    <?php include'radio_value.php'; ?>
-    <input name="submit" type="submit" value="Convert">
-    </form>
-    </div>
-    </div>
+<body>
+<div class="container">
+<div class="main">
+<h2>Select What Country/City and Conversion Type You Want:</h2>
+<form action="form.php" method="post">
+<!----- Select Option Fields Starts Here ----->
+<label class="heading">Country/City:</label>
+<select multiple name="Country/City[]">
+    
+<option value="Australia/Sydney">Australia/Sydney</option>
+<option value="Brazil/Brasilia">Brazil/Brasilia</option>
+<option value="Cabo Verde/Praia">Cabo Verde/Praia</option>
+<option value="Canada/Whitehorse">Canada/Whitehorse</option>
+<option value="Chile/Easter Island">Chile/Easter Island</option>
+<option value="Cook Islands/Rarotonga">Cook Islands/Rarotonga</option>
+<option value="India/Kolkata">India/Kolkata</option>
+<option value="Kiribati/Kiritimati">Kiribati/Kiritimati</option>
+<option value="Maldives/Male">Maldives/Male</option>
+<option value="Malta/Valletta">Malta/Valletta</option>
+<option value="NZ/Wellington">NZ/Wellington</option>
+<option value="Oman/Muscat">Oman/Muscat</option>
+<option value="Peru/Lima">Peru/Lima</option>
+<option value="Samoa/Apia">Samoa/Apia</option>
+<option value="Sierra Leone/Freetown">Sierra Leone/Freetown</option>
+<option value="Singapore/Singapore">Singapore/Singapore</option>
+<option value="South Africa/Johannesburg">South Africa/Johannesburg</option>
+<option value="South Korea/Seoul">South Korea/Seoul</option>
+<option value="Taipei/Taiwan">Taipei/Taiwan</option>
+<option value="United Kingdom/Bermuda">United Kingdom/Bermuda</option>
+<option value="United Kingdom/Isle Of Man">United Kingdom/Isle Of Man</option>
+<option value="United States/Fairbanks">United States/Fairbanks</option>
+<option value="United States/Houston">United States/Houston</option>
+<option value="United States/Los Angeles">United States/Los Angeles</option>
+<option value="Vanuatu/Port Vila">Vanuatu/Port Vila</option>
+<option value="Yemen/Sana">Yemen/Sana</option>
+</select>
+<?php include'select_value.php'; ?>
+<!---- Radio Button Starts Here ----->
+<label class="heading">Converison Type:</label>
+<input name="radio" type="radio" value="Currency Conversion">Currency Conversion
+<input name="radio" type="radio" value="Timezone Conversion">Timezone Conversion
+<?php include'radio_value.php'; ?>
+<input name="submit" type="submit" value="Convert">
+</form>
+</div>
+</div>
 </form>
 </body>
 </html>
