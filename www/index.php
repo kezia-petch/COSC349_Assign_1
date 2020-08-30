@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
-<head><title>Date and Time Converter</title>
+<head><title>Currency and Timezone Converter</title>
 <style>
 th { text-align: left; }
 
@@ -16,9 +16,9 @@ th, td {
 </head>
 
 <body>
-  <h1>Currency Converter</h1>
+  <h1>Currency and Timezone Converter</h1>
 
-<p>Showing list of avaliable conversions:</p>
+<p>Showing a list of the possible Country and associated City conversions:</p>
 
 <table border="3">
   <tr><th>Country/City</th><th>Currency</th><th>Timezone</th><th>Offset from UTC</th></tr>
@@ -43,13 +43,15 @@ while($row = $q->fetch()){
 ?>
 </table>
 
-<form action="checkbox-form.php" method="post">
+
 
 <body>
+
+
 <div class="container">
 <div class="main">
 <h2>Select What Country/City and Conversion Type You Want:</h2>
-<form action="form.php" method="post">
+<form action="dayconverter.php" method="post">
 <!----- Select Option Fields Starts Here ----->
 <label class="heading">Country/City:</label>
 <select multiple name="Country/City[]">
@@ -81,6 +83,7 @@ while($row = $q->fetch()){
 <option value="Vanuatu/Port Vila">Vanuatu/Port Vila</option>
 <option value="Yemen/Sana">Yemen/Sana</option>
 </select>
+
 <?php include'select_value.php'; ?>
 <!---- Radio Button Starts Here ----->
 <label class="heading">Converison Type:</label>
@@ -88,6 +91,7 @@ while($row = $q->fetch()){
 <input name="radio" type="radio" value="Timezone Conversion">Timezone Conversion
 <?php include'radio_value.php'; ?>
 <input name="submit" type="submit" value="Convert">
+
 </form>
 </div>
 </div>
