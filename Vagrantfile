@@ -168,7 +168,7 @@ Vagrant.configure("2") do |config|
       cp /vagrant/dayconverter-website.conf /etc/apache2/sites-available/
 
       # activate our website configuration ...
-      a2ensite test-website
+      a2ensite dayconverter-website
 
       # ... and disable the default website provided with Apache
       a2dissite 000-default

@@ -1,9 +1,8 @@
-CREATE TABLE dayconverter (
+CREATE TABLE dayconverter(
   name varchar(50),
   currency varchar(50),
-  timezone varchar(5) NOT NULL,
-  offset varchar(30) NOT NULL,
-  PRIMARY KEY (name)
+  timezone varchar(5),
+  offset varchar(30)
 );
 
 INSERT INTO dayconverter VALUES ('Kiribati/Kiritimati','Australian Dollar(AUD)','LINT','UTC +14 Hours');

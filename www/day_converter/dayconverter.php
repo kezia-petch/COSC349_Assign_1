@@ -24,7 +24,7 @@
 ////?>
 <?php
     if((isset($_POST['submit'])) && (isset($_POST['radio'], "Timezone Conversion"))){
-        if((!empty($_POST['Country/City'], "Australia/Sydney")) && ) {
+        if(!empty($_POST['Country/City'], "Australia/Sydney")) {
             echo "<span>You have selected :<b> ".$_POST['radio']."</b></span>";
         }
         if(!empty($_POST['Country/City'], "Brazil/Brasilia")) {
