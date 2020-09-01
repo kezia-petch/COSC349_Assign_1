@@ -1,5 +1,6 @@
-// Layout explaining the webserver format whlist naming the site
-// and providing a description.
+/* Layout explaining the webserver format whlist naming the site
+ * and providing a description.
+ */
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
 <head><title>Currency and Timezone Converter</title>
@@ -22,14 +23,15 @@ th, td {
 
 <p>Showing the possible Country and associated City conversions:</p>
 
-// Creating the table with the same four collumns seen in the SQL table present
-// within the database server.
-<table border="1">
+/* Creating the table with the same four collumns seen in the SQL table present
+ * within the database server.
+ */
+ <table border="1">
   <tr><th>Country/City</th><th>Currency</th><th>Timezone</th><th>Offset from UTC</th></tr>
 
-// php code to allow interaction  between the database and website server.
-// This code should allow the content of the database table to be
-// displayed on the webiste server, though it currently doesn't function properly.
+/* php code to allow interaction  between the database and website server.
+* This code should allow the content of the database table to be
+*/ displayed on the webiste server, though it currently doesn't function properly.
 <?php
 session_start();
 $db_host   = '192.168.2.12';
@@ -50,10 +52,10 @@ while($row = $q->fetch()){
 
 </table>
 
-// Creation of the multi-selector, which displays all of the avaliable
-// country/cities for conversion. Further interaction between the database
-// server could reduce the hard coding present here. This currently doesn't
-// function properly and is thus not displayed on the website server.
+/* Creation of the multi-selector, which displays all of the avaliable
+* country/cities for conversion. Further interaction between the database
+* server could reduce the hard coding present here. This currently doesn't
+*/ function properly and is thus not displayed on the website server.
 <h2>Select What Country/City and Conversion Type You Want:</h2>
 <form action="http://192.168.2.12/dayconverter.php" method="post">
 <!----- Select Option Fields Starts Here ----->
@@ -88,11 +90,11 @@ while($row = $q->fetch()){
 <option value="Yemen/Sana">Yemen/Sana</option>
 </select>
 
-// Creation of the radio buttons occur here. These buttons
-// allow the user to choose if they want to see the selected
-// country/cities currency conversion (compared with NZ currency)
-// or a timezone conversion. This currently doesn't
-// function properly and is thus not displayed on the website server.
+/*Creation of the radio buttons occur here. These buttons
+* allow the user to choose if they want to see the selected
+* country/cities currency conversion (compared with NZ currency)
+* or a timezone conversion. This currently doesn't
+*/ function properly and is thus not displayed on the website server.
 <?php include'select_value.php'; ?>
 <!---- Radio Button Starts Here ----->
 <label class="heading">Converison Type:</label>
