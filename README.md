@@ -1,6 +1,6 @@
 # COSC349 Assignment 1:
 
-Multi VM project focused on providing the user with the date and time of specific countries.
+Multi VM project focused on providing the user with the currency conversion (in comparsion with NZ) or timezone (in comparison with NZ) of specific countries.
 
 ## Running the Project:
 
