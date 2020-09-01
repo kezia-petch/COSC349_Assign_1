@@ -1,3 +1,6 @@
+/* Initally created a table with 4 collumns that are all varchar values.
+ * No primary or foreign keys are present in this table.
+ */
 CREATE TABLE dayconverter(
   name varchar(50),
   currency varchar(50),
@@ -5,6 +8,9 @@ CREATE TABLE dayconverter(
   offset varchar(30)
 );
 
+/* The ranging countries chosen due to variance from the UTC and their
+ * associated data are then inserted into the created table
+ */
 INSERT INTO dayconverter VALUES ('Kiribati/Kiritimati','Australian Dollar(AUD)','LINT','UTC +14 Hours');
 INSERT INTO dayconverter VALUES ('Samoa/Apia','Tala(WST)','WST','UTC +13 hours');
 INSERT INTO dayconverter VALUES ('NZ/Wellington','NZ Dollar(NSD)','NZST','UTC +12 hours');
